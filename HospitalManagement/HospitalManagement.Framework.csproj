@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5F94A8B-652B-4F6F-9800-9214B4488ED0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalManagement</RootNamespace>
+    <AssemblyName>HospitalManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addEmpUserPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addEmpUserPanel.Designer.cs">
+      <DependentUpon>addEmpUserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminSettingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminSettingsUC.Designer.cs">
+      <DependentUpon>adminSettingsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorSettingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="doctorSettingsUC.Designer.cs">
+      <DependentUpon>doctorSettingsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerAddPatientUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerAddPatientUserControl.Designer.cs">
+      <DependentUpon>registerAddPatientUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorForm.Designer.cs">
+      <DependentUpon>doctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorProfileUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="doctorProfileUserControl.Designer.cs">
+      <DependentUpon>doctorProfileUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminProfileUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminProfileUserControl.Designer.cs">
+      <DependentUpon>adminProfileUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterAdmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterAdmitForm.Designer.cs">
+      <DependentUpon>RegisterAdmitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerAdmitUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerAdmitUC.Designer.cs">
+      <DependentUpon>registerAdmitUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerAppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerAppointmentForm.Designer.cs">
+      <DependentUpon>registerAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerAppointmentUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerAppointmentUserControl.Designer.cs">
+      <DependentUpon>registerAppointmentUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerProfileUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerProfileUserControl.Designer.cs">
+      <DependentUpon>registerProfileUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerSettingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="registerSettingsUC.Designer.cs">
+      <DependentUpon>registerSettingsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterTestForm.Designer.cs">
+      <DependentUpon>RegisterTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterTestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegisterTestUC.Designer.cs">
+      <DependentUpon>RegisterTestUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectDoctorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selectDoctorPanel.Designer.cs">
+      <DependentUpon>selectDoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectSupervisorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selectSupervisorPanel.Designer.cs">
+      <DependentUpon>selectSupervisorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployeeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewEmployeeUC.Designer.cs">
+      <DependentUpon>viewEmployeeUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addEmpUserPanel.resx">
+      <DependentUpon>addEmpUserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminSettingsUC.resx">
+      <DependentUpon>adminSettingsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorSettingsUC.resx">
+      <DependentUpon>doctorSettingsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerAddPatientUserControl.resx">
+      <DependentUpon>registerAddPatientUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorForm.resx">
+      <DependentUpon>doctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorProfileUserControl.resx">
+      <DependentUpon>doctorProfileUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminProfileUserControl.resx">
+      <DependentUpon>adminProfileUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterAdmitForm.resx">
+      <DependentUpon>RegisterAdmitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerAdmitUC.resx">
+      <DependentUpon>registerAdmitUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerAppointmentForm.resx">
+      <DependentUpon>registerAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerAppointmentUserControl.resx">
+      <DependentUpon>registerAppointmentUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerProfileUserControl.resx">
+      <DependentUpon>registerProfileUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerSettingsUC.resx">
+      <DependentUpon>registerSettingsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterTestForm.resx">
+      <DependentUpon>RegisterTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterTestUC.resx">
+      <DependentUpon>RegisterTestUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectDoctorPanel.resx">
+      <DependentUpon>selectDoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectSupervisorPanel.resx">
+      <DependentUpon>selectSupervisorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmployeeUC.resx">
+      <DependentUpon>viewEmployeeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalManagementDataSet.xsc">
+      <DependentUpon>HospitalManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalManagementDataSet.xss">
+      <DependentUpon>HospitalManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalManagementDataSet1.xsc">
+      <DependentUpon>HospitalManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalManagementDataSet1.xss">
+      <DependentUpon>HospitalManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalManagement.DAL\HospitalManagement.DAL.csproj">
+      <Project>{acd04dab-a332-4230-b6e9-db7282cfd349}</Project>
+      <Name>HospitalManagement.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagement.Framework", "HospitalManagement\HospitalManagement.Framework.csproj", "{F5F94A8B-652B-4F6F-9800-9214B4488ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagement.DAL", "HospitalManagement.DAL\HospitalManagement.DAL.csproj", "{ACD04DAB-A332-4230-B6E9-DB7282CFD349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F94A8B-652B-4F6F-9800-9214B4488ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F94A8B-652B-4F6F-9800-9214B4488ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F94A8B-652B-4F6F-9800-9214B4488ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F94A8B-652B-4F6F-9800-9214B4488ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD04DAB-A332-4230-B6E9-DB7282CFD349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD04DAB-A332-4230-B6E9-DB7282CFD349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD04DAB-A332-4230-B6E9-DB7282CFD349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD04DAB-A332-4230-B6E9-DB7282CFD349}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
