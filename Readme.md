@@ -26,7 +26,6 @@ _Shabuz Badsha_
 #
 
 
-
 # Screen Shots:
 
 ![](Screenshots/1.PNG)
