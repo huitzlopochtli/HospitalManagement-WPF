@@ -28,11 +28,11 @@ _Shabuz Badsha_
 
 # Screen Shots:
 
-![](Screenshots/1.png)
-![](Screenshots/2.png)
-![](Screenshots/3.png)
-![](Screenshots/4.png)
-![](Screenshots/5.png)
-![](Screenshots/6.png)
-![](Screenshots/7.png)
-![](Screenshots/8.png)
+![](Screenshots/1.PNG)
+![](Screenshots/2.PNG)
+![](Screenshots/3.PNG)
+![](Screenshots/4.PNG)
+![](Screenshots/5.PNG)
+![](Screenshots/6.PNG)
+![](Screenshots/7.PNG)
+![](Screenshots/8.PNG)
